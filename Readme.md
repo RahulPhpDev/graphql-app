@@ -31,3 +31,28 @@ Framgment
 fragment userField on User {
   id, name
 }
+
+
+### Passing a variable
+
+query 
+    ```
+    query findUser($userid_1:Int!, $userid_2: Int! = 3) {
+  User3: findUser(id:$userid_1) {
+   ...userField,
+    email
+  }
+  
+  User1: findUser(id:$userid_2) {
+    ...userField
+  }
+}
+
+```
+
+##Pass a variable 
+```
+{
+  "userid_1": 1
+}
+```
