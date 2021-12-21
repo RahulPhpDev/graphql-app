@@ -19,7 +19,8 @@ type Person {
 }
 type User {
   id: Int,
-  name: String
+  name: String,
+  email: String
 }
   type Query {
     id: ID,
@@ -125,7 +126,8 @@ const userDetail = [ {
 },
 {
   id: 3,
-  name: "3nd"
+  name: "3nd",
+  email: "test3.com"
 },
 
 ]
